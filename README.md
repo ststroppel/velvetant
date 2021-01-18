@@ -1,3 +1,7 @@
+# Start from 0 again
+vue create #name#
+vue add electron-builder
+
 # vue-electron-app
 
 ## Project setup
