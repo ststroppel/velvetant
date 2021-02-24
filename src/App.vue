@@ -1,9 +1,8 @@
 <template>
   <v-app id="inspire">
     <Navigation />
-
     <v-main>
-      <Home />
+      <router-view />
     </v-main>
   </v-app>
 </template>

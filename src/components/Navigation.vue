@@ -1,14 +1,15 @@
 <template>
-  <v-navigation-drawer v-model="drawer" app>
-    <v-sheet color="grey lighten-4" class="pa-4">
-      <v-avatar class="mb-4" color="grey darken-1" size="64"></v-avatar>
-
-      <div>john@vuetifyjs.com</div>
-    </v-sheet>
+  <v-navigation-drawer app>
+    <v-list-item>
+      <v-list-item-content>
+        <v-list-item-title class="title"> VelvetAnt </v-list-item-title>
+        <v-list-item-subtitle> Beats blueant </v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list-item>
 
     <v-divider></v-divider>
 
-    <v-list>
+    <v-list dense nav>
       <v-list-item v-for="[icon, text] in links" :key="icon" link>
         <v-list-item-icon>
           <v-icon>{{ icon }}</v-icon>
@@ -31,10 +32,10 @@ import { Component, Vue } from 'vue-property-decorator';
   data: () => ({
     drawer: null,
     links: [
-      ['mdi-inbox-arrow-down', 'Inbox'],
-      ['mdi-send', 'Send'],
-      ['mdi-delete', 'Trash'],
-      ['mdi-alert-octagon', 'Spam']
+      ['mdi-home', 'Home'],
+      ['mdi-briefcase', 'Projects'],
+      ['mdi-calendar', 'Calendar'],
+      ['mdi-cog', 'Settings']
     ]
   })
 })
